@@ -28,20 +28,26 @@ function RandomQuote() {
 
   console.log(quote.content);
 
+  const displayContent = isLoading ? (
+    <Spinner />
+  ) : (
+    <section>
+      <h1>Quote</h1>
+      <br />
+      <p>{quote.content}</p>
+      <br />
+
+      <p>
+        {' '}
+        <strong>{quote.author}</strong>
+      </p>
+    </section>
+  );
+
   return (
     <div className="container">
       <Header />
-      <section className="">
-        <h1>Quote</h1>
-        <br />
-        <p>{quote.content}</p>
-        <br />
-
-        <p>
-          {' '}
-          <strong>{quote.author}</strong>
-        </p>
-      </section>
+      {displayContent}
     </div>
   );
 }
