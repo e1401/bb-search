@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Header from './components/Header';
 import CharacterGrid from './components/characters/CharacterGrid';
+import Search from './components/Search';
 
 const App = () => {
   const [items, setItems] = useState(null);
@@ -21,6 +22,7 @@ const App = () => {
   return (
     <div className="container">
       <Header />
+      <Search />
       <CharacterGrid items={items} isLoading={isLoading} />
     </div>
   );

@@ -1,7 +1,8 @@
 import spinner from '../../img/spinner.gif';
+import CharacterItem from './CharacterItem';
 
 const CharacterGrid = ({ items, isLoading }) => {
-  console.log(items);
+  // console.log(items);
   return (
     <div>
       {isLoading ? (
@@ -9,7 +10,7 @@ const CharacterGrid = ({ items, isLoading }) => {
       ) : (
         <section className="cards">
           {items.map((item) => (
-            <h1>{item.name}</h1>
+            <CharacterItem item={item} key={item.char_id} />
           ))}
         </section>
       )}
