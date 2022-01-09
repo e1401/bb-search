@@ -1,4 +1,10 @@
-<<<<<<< HEAD
+# bb-search
+**Bears, Beets, Breaking Bad api**
+
+Web app for exploring Breaking Bad characters and with random quote page for your daily motivation and a nice workout for react hooks. Based on [Traversy media project](https://www.youtube.com/watch?v=YaioUnMw0mo).
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -70,9 +76,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
-# bb-search
-**Bears, Beets, Breaking Bad api**
 
-Web app for exploring Breaking Bad characters and with random quote page for your daily motivation and a nice workout for react hooks. Based on [Traversy media project](https://www.youtube.com/watch?v=YaioUnMw0mo).
-
->>>>>>> c62e505f10074e472ae47da2c478414d0184e2da
