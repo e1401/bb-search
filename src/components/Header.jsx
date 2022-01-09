@@ -1,4 +1,4 @@
-import bbLogo from '../img/logo.png';
+import bbLogo from '../img/logo-edit.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {

@@ -29,16 +29,16 @@ const App = () => {
     getSearchQuery(queryData);
   };
 
-  const childToParentFunction = () => {
+  const clearQuery = () => {
     setQuery('');
     setIsLoading(true);
-    setItems(items);
+    // setItems(items);
   };
 
   return (
     <div className="container">
       <Header />
-      <Search getSearchContent={handleGetSearchQuery} childToParentProp={childToParentFunction} />
+      <Search getSearchContent={handleGetSearchQuery} clearQuery={clearQuery} />
       <CharacterGrid items={items} isLoading={isLoading} />
     </div>
   );

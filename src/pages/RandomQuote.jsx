@@ -15,7 +15,6 @@ function RandomQuote() {
     const getQuote = async () => {
       const results = await axios(`https://www.breakingbadapi.com/api/quote/random`);
 
-      console.log(results.data[0].quote);
       setQuote({
         content: results.data[0].quote,
         author: results.data[0].author
@@ -25,8 +24,6 @@ function RandomQuote() {
 
     getQuote();
   }, []);
-
-  console.log(quote.content);
 
   const displayContent = isLoading ? (
     <Spinner />

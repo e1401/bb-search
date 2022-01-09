@@ -1,17 +1,21 @@
 import { useState } from 'react';
 
-const Search = ({ getSearchContent, childToParentProp }) => {
+const Search = ({ getSearchContent, clearQuery }) => {
   const [text, setText] = useState('');
-  console.log(text);
+
   const onChange = (searchContent) => {
     setText(searchContent);
     getSearchContent(searchContent);
   };
 
-  const clearSearch = () => {
+  // const lorem = parentToChildProp;
+  const clear = clearQuery;
+
+  const onClear = () => {
+    clear();
     setText('');
-    // clearSearchContent();
   };
+
   return (
     <section className="search">
       <form>
@@ -24,7 +28,7 @@ const Search = ({ getSearchContent, childToParentProp }) => {
           onChange={(e) => onChange(e.target.value)}
         />
       </form>
-      <button className="btn" onClick={childToParentProp}>
+      <button className="btn" onClick={onClear}>
         Clear search
       </button>
     </section>
