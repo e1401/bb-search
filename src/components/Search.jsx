@@ -8,9 +8,7 @@ const Search = ({ getSearchContent, clearQuery }) => {
     getSearchContent(searchContent);
   };
 
-  // const lorem = parentToChildProp;
   const clear = clearQuery;
-
   const onClear = () => {
     clear();
     setText('');
