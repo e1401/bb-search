@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+
 import axios from 'axios';
 import './App.css';
 import Header from './components/Header';
@@ -12,7 +13,6 @@ const App = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
-      // const results = await axios(`https://www.breakingbadapi.com/api/characters`);
       const results = await axios(`https://www.breakingbadapi.com/api/characters?name=${query}`);
 
       setItems(results.data);
@@ -25,7 +25,6 @@ const App = () => {
     setQuery(queryData);
   };
 
-  console.log(`Query is ${query}`);
   return (
     <div className="container">
       <Header />
