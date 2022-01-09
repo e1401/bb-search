@@ -25,14 +25,14 @@ const App = () => {
     setQuery(queryData);
   };
 
+  const handleGetSearchQuery = (queryData) => {
+    getSearchQuery(queryData);
+  };
+
   return (
     <div className="container">
       <Header />
-      <Search
-        getSearchContent={(queryData) => {
-          getSearchQuery(queryData);
-        }}
-      />
+      <Search getSearchContent={handleGetSearchQuery} />
       <CharacterGrid items={items} isLoading={isLoading} />
     </div>
   );
