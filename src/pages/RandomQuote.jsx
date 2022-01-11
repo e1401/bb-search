@@ -50,7 +50,12 @@ function RandomQuote() {
     <div className="container">
       <Header />
       {displayContent}
-      <button onClick={handleClick}>Another!</button>
+
+      <div style={{ marginTop: '3vh' }}>
+        <button className="btn" style={{ backgroundColor: 'green' }} onClick={handleClick}>
+          Another!
+        </button>
+      </div>
     </div>
   );
 }

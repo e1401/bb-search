@@ -1,7 +1,8 @@
+import { motion } from 'framer-motion';
 const CharacterItem = ({ item }) => {
   // console.log(item);
   return (
-    <div className="card">
+    <motion.div className="card" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <div className="card-inner">
         <div className="card-front">
           <img src={item.img} alt="Character portrait" />
@@ -27,7 +28,7 @@ const CharacterItem = ({ item }) => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
