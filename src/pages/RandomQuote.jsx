@@ -1,8 +1,8 @@
 import Header from '../components/Header';
 import Spinner from '../components/Spinner';
-import Axios from 'axios';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Button from '../components/Button';
 
 function RandomQuote() {
   const [quote, setQuote] = useState({
@@ -52,9 +52,7 @@ function RandomQuote() {
       {displayContent}
 
       <div style={{ marginTop: '3vh' }}>
-        <button className="btn" onClick={handleClick}>
-          Another!
-        </button>
+        <Button onClick={handleClick}>Another</Button>
       </div>
     </div>
   );

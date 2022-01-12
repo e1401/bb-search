@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from './Button';
 
 const Search = ({ getSearchContent, clearQuery }) => {
   const [text, setText] = useState('');
@@ -14,6 +15,18 @@ const Search = ({ getSearchContent, clearQuery }) => {
     setText('');
   };
 
+  const switchButton = () => {
+    if (text.length === 0) {
+      return (
+        <Button onClick={onClear} disabled>
+          Clear search
+        </Button>
+      );
+    } else {
+      return <Button onClick={onClear}>Clear sreach</Button>;
+    }
+  };
+
   return (
     <section className="search">
       <form>
@@ -26,9 +39,7 @@ const Search = ({ getSearchContent, clearQuery }) => {
           onChange={(e) => onChange(e.target.value)}
         />
       </form>
-      <button className="btn" onClick={onClear}>
-        Clear search
-      </button>
+      {switchButton()}
     </section>
   );
 };
