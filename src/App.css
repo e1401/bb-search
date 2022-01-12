@@ -35,6 +35,17 @@ a {
   flex-grow: 0;
 }
 
+.btn:hover {
+  background-color: green;
+}
+
+.btn:active {
+  background-color: green;
+  box-shadow: 0 2px #333;
+  transform: tranlsateY(2px);
+  transform: scale(0.98);
+}
+
 header {
   height: 200px;
 }

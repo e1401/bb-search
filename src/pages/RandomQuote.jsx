@@ -52,7 +52,7 @@ function RandomQuote() {
       {displayContent}
 
       <div style={{ marginTop: '3vh' }}>
-        <button className="btn" style={{ backgroundColor: 'green' }} onClick={handleClick}>
+        <button className="btn" onClick={handleClick}>
           Another!
         </button>
       </div>
