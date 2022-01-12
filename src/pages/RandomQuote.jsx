@@ -1,6 +1,5 @@
 import Header from '../components/Header';
 import Spinner from '../components/Spinner';
-import Axios from 'axios';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
