@@ -23,7 +23,7 @@ const Search = ({ getSearchContent, clearQuery }) => {
         </Button>
       );
     } else {
-      return <Button onClick={onClear}>Clear sreach</Button>;
+      return <Button onClick={onClear}>Clear search</Button>;
     }
   };
 

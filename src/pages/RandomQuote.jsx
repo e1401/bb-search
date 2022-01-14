@@ -10,7 +10,7 @@ function RandomQuote() {
     author: ''
   });
   const [isLoading, setIsLoading] = useState(true);
-  const [another, setAnother] = useState(false);
+  const [anotherQuote, setAnotherQuote] = useState(false);
 
   useEffect(() => {
     const getQuote = async () => {
@@ -24,7 +24,7 @@ function RandomQuote() {
     };
 
     getQuote();
-  }, [another]);
+  }, [anotherQuote]);
 
   const displayContent = isLoading ? (
     <Spinner />
@@ -42,8 +42,8 @@ function RandomQuote() {
     </section>
   );
 
-  const handleClick = () => {
-    setAnother(!another);
+  const handleClick = (e) => {
+    setAnotherQuote(!anotherQuote);
   };
 
   return (
@@ -52,7 +52,7 @@ function RandomQuote() {
       {displayContent}
 
       <div style={{ marginTop: '3vh' }}>
-        <Button onClick={handleClick}>Another</Button>
+        <Button onClick={handleClick}>Another quote</Button>
       </div>
     </div>
   );
